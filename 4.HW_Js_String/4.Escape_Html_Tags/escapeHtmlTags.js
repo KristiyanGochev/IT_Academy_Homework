@@ -1,5 +1,5 @@
 
-function myFunction(){
+function submit(){
     var text = document.getElementById('space').innerHTML;
     var nbsp = text.replace(/&/g, "&amp;")
                    .replace(/</g, "&lt;")
