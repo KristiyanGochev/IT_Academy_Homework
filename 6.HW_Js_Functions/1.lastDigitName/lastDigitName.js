@@ -1,9 +1,10 @@
 function lastDigit() {
+  'use strict';
   var number = document.getElementById('number').value;
-    var numberToString = number.toString();
-    var numberToString = numberToString.charAt(numberToString.length-1);
-    var lastDigit = numberToString
-    return lastDigit;
+  var numberToString = number.toString();
+  var numberToString = numberToString.charAt(numberToString.length-1);
+  var lastDigit = numberToString
+  return lastDigit;
 };
 
 
