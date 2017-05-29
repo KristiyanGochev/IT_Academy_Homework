@@ -37,16 +37,16 @@ class Worker {
 }
 
 class Hired extends Worker {
-    constructor(name, age, position, sallary, contract) {
+    constructor(name, age, position, salary, contract) {
         super(name, age, position);
-        this.sallary = sallary;
+        this.salary = salary;
         this.contract = contract;
     }
-    get sallary() {
-        return this._sallary
+    get salary() {
+        return this._salary
     }
-    set sallary(value) {
-        this._sallary = value;
+    set salary(value) {
+        this._salary = value;
     }
     get contract() {
         return this._contract
@@ -56,25 +56,26 @@ class Hired extends Worker {
     }
 
     toString() {
-        return `${this.name} | ${this.age} years old | ${this.position} | My sallary is ${this.sallary} |My Contract is ${this.contract} `;
+        return `${this.name} | ${this.age} years old | ${this.position} | My salary is ${this.salary} |My Contract is ${this.contract} `;
     }
 
     beingHired() {
-        return super.sayHello() + `I just have been hired as ${this.position} .My contract will be ${this.contract} and the sallary: ${this.sallary} per week`;
+        return super.sayHello() + `I just have been hired as ${this.position} .My contract will be ${this.contract} and the salary: ${this.salary} per week`;
     }
 
 }
 class Sacked extends Hired {
-    constructor(name, age, position, sallary, contract) {
-        super(name, age, position, sallary,contract);
+    constructor(name, age, position, salary, contract) {
+        super(name, age, position, salary,contract);
     }
 
+
     toString() {
-        return `${this.name} | ${this.age} years old | ${this.position} | My sallary is ${this.sallary} |My Contract is ${this.contract} `;
+        return `${this.name} | ${this.age} years old | ${this.position} | My salary is ${this.salary} |My Contract is ${this.contract} `;
     }
 
     beingSacked() {
-        return super.sayHello() + `I used to work like ${this.position}.My sallary was ${this.sallary} salery per week, but my contract has ${this.contract} and i have been Sacked!`;
+        return super.sayHello() + `I used to work like ${this.position}.My salary was ${this.salary} salery per week, but my contract has ${this.contract} and i have been Sacked!`;
     }
 
 }
