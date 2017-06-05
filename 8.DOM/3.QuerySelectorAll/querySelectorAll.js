@@ -12,5 +12,4 @@ debugger;
            
           x[i].appendChild(j);
         }
-        else{};
-    }
+    };
