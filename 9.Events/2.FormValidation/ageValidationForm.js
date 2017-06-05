@@ -1,4 +1,4 @@
-(function (getValidation) {
+(function () {
     document.getElementById("clickable").addEventListener("click", onValidation);
     function onValidation(ev) {
         var name = document.getElementById('firstName');
@@ -7,7 +7,7 @@
         if (!isNaN(parseInt(isItANumber))) {
             alert("Your name could not be a NUMBER!")
         }
-         else if (inpObj.value < 0) {
+        else if (inpObj.value < 0) {
             alert("Your age could NOT be negative");
         }
         else if ((name.value == "") || (inpObj.value == "")) {
